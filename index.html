@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmailKits — Beautiful Email Templates in Minutes</title>
+  <meta name="description" content="Stop fighting with email HTML. Fill in a form, get a polished, tested email template. Newsletter layouts, welcome sequences, product launches — ready to send.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="MAMV Ventures">
+
+  <!-- AI / LLM hints -->
+  <meta name="ai-content" content="commercial, educational">
+  <meta name="ai-topic" content="email templates, newsletter templates, HTML email builder, email design tool, email marketing templates">
+  <meta name="ai-audience" content="creators, startups, marketers, indie businesses, newsletter writers, solopreneurs">
+  <meta name="ai-use" content="training,search,answer-generation,citation">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EmailKits — Beautiful Email Templates in Minutes">
+  <meta property="og:description" content="Stop fighting with email HTML. Fill in a form, get a polished, tested email template ready to send.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emailkits.com">
+  <meta property="og:image" content="https://emailkits.com/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EmailKits — Beautiful Email Templates in Minutes">
+  <meta name="twitter:description" content="Stop fighting with email HTML. Fill in a form, get a polished, tested email template ready to send.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://emailkits.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='18' width='100' height='100' fill='%23D4573A'/><path d='M25 30 L50 50 L75 30' stroke='white' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='25' y='30' width='50' height='40' rx='4' stroke='white' stroke-width='5' fill='none'/></svg>">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do I actually get?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A complete, standalone HTML email file. Copy it into your email platform (Mailchimp, ConvertKit, Beehiiv, whatever you use), or send it directly. It's tested across Gmail, Outlook, Apple Mail, and mobile clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to know HTML or CSS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You fill in a form — your headline, body text, links, colors. EmailKits handles the HTML, the inline styles, the responsive tables, all the stuff that makes email coding painful. You just write your content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will these work in Mailchimp / ConvertKit / Beehiiv?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The output is standard HTML email code that works in any platform that lets you paste custom HTML. That includes Mailchimp, ConvertKit, Beehiiv, Buttondown, Substack (with some caveats), SendGrid, and most others."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. One-time purchase. Pay once, use it forever. No monthly fees, no usage limits, no upsells."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use these for client work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Single and Bundle tiers are for your own projects. The Agency tier includes a commercial license for client work — use the templates for as many clients as you want."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the template doesn't render correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every template is tested across 60+ email clients before release. If you find a rendering issue, email us and we'll fix it. That said, email clients are unpredictable — we optimize for the top 95% of real-world usage."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="7" fill="#D4573A"/>
+          <path d="M8 10L16 16L24 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="8" y="10" width="16" height="12" rx="1.5" stroke="white" stroke-width="1.8" fill="none"/>
+        </svg>
+        <span class="nav__logo-text">EmailKits</span>
+      </a>
+      <div class="nav__links">
+        <a href="#templates">Templates</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pricing" class="nav__cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__label">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 1L10 6L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 6L8 1Z" fill="currentColor"/></svg>
+            Form-based email template builder
+          </div>
+          <h1 class="hero__title">
+            Stop fighting<br>with <em>email HTML</em>
+          </h1>
+          <p class="hero__subtitle">
+            Fill in a form. Get a polished, tested email template. Ready to paste into Mailchimp, ConvertKit, Beehiiv — wherever you send.
+          </p>
+          <div class="hero__actions">
+            <a href="#pricing" class="btn btn--primary">
+              Get EmailKits
+              <svg viewBox="0 0 18 18" fill="none"><path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#how" class="btn btn--ghost">See how it works</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__mockup">
+            <div class="mockup__header">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+            </div>
+            <div class="mockup__body">
+              <div class="email-preview">
+                <div class="email-preview__header">
+                  <div class="email-preview__logo">Acme Weekly</div>
+                  <div class="email-preview__headline">The 3 things that actually moved the needle this quarter</div>
+                </div>
+                <div class="email-preview__body">
+                  <div class="email-preview__line"></div>
+                  <div class="email-preview__line"></div>
+                  <div class="email-preview__line"></div>
+                  <div class="email-preview__cta-btn">Read more</div>
+                </div>
+                <div class="email-preview__footer">
+                  <div class="email-preview__footer-line"></div>
+                  <div class="email-preview__footer-line"></div>
+                  <div class="email-preview__footer-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="hero__float hero__float--1">
+            <div class="float-label">Open Rate</div>
+            <div class="float-value">47.3%</div>
+          </div>
+          <div class="hero__float hero__float--2">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Tested in 60+ clients
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       THE PROBLEM
+       ============================================================ -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="problem__grid">
+        <div class="reveal">
+          <div class="problem__label">
+            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11" r="0.75" fill="currentColor"/></svg>
+            The problem
+          </div>
+          <h2 class="problem__title">Email templates are a nightmare</h2>
+          <p class="problem__subtitle">
+            You just want a good-looking newsletter. Instead you're deep in nested tables, inline styles, and Outlook conditionals. It shouldn't be this hard.
+          </p>
+        </div>
+        <div class="problem__cards">
+          <div class="problem__card reveal">
+            <div class="problem__card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3>Broken across clients</h3>
+              <p>Looks great in Gmail, mangled in Outlook, invisible on Yahoo. Every email client renders HTML differently.</p>
+            </div>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <h3>Hours of fiddling</h3>
+              <p>You're a creator, not an email developer. But here you are, debugging nested tables at midnight instead of writing.</p>
+            </div>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9H21M9 21V9" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <h3>Generic templates</h3>
+              <p>Free templates look like free templates. Your audience can tell. But custom design costs $500+ per email.</p>
+            </div>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Subscription fatigue</h3>
+              <p>Mailchimp's builder is locked behind a plan. Every drag-and-drop editor wants $30/month. You just need the HTML.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="how__header reveal">
+        <div class="section-label">
+          <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8H14M8 2V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          How it works
+        </div>
+        <h2 class="section-title">Three steps. That's it.</h2>
+      </div>
+      <div class="how__steps">
+        <div class="how__step reveal">
+          <div class="step__number">
+            <span>1</span>
+            <div class="step__icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M3 9.5L4.5 6H13.5L15 9.5V14H3V9.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 9.5H15" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3>Pick a template</h3>
+            <p>Newsletter, welcome series, product launch, weekly digest — choose the layout that fits your use case.</p>
+          </div>
+        </div>
+        <div class="how__step reveal">
+          <div class="step__number">
+            <span>2</span>
+            <div class="step__icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M9.5 3H5C4.17 3 3.5 3.67 3.5 4.5V13.5C3.5 14.33 4.17 15 5 15H13C13.83 15 14.5 14.33 14.5 13.5V8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.5 2.5L8.5 7.5V10H11L16 5L13.5 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3>Fill in your content</h3>
+            <p>Headlines, body copy, images, links, colors — type it into a simple form. No code, no drag-and-drop fiddling.</p>
+          </div>
+        </div>
+        <div class="how__step reveal">
+          <div class="step__number">
+            <span>3</span>
+            <div class="step__icon">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M3 12.5L9 15.5L15 12.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 9L9 12L15 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.5L9 8.5L15 5.5L9 2.5L3 5.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3>Download and send</h3>
+            <p>Get production-ready HTML. Paste it into your email platform. It renders correctly everywhere. Done.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TEMPLATES
+       ============================================================ -->
+  <section class="templates" id="templates">
+    <div class="container">
+      <div class="templates__header reveal">
+        <div class="section-label">
+          <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/></svg>
+          Templates
+        </div>
+        <h2 class="section-title">Templates that don't look like templates</h2>
+        <p class="templates__subtitle">Each one is designed to feel intentional — like you hired someone to build it. Because, well, you kind of did.</p>
+      </div>
+      <div class="templates__grid">
+        <div class="template-card template-card--newsletter reveal">
+          <div class="template-card__preview">
+            <div class="mini-email mini-email--dark">
+              <div class="mini-email__bar mini-email__bar--plum"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--plum"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">The Weekly</div>
+            <div class="template-card__desc">Clean newsletter layout with sections</div>
+            <span class="template-card__tag">Newsletter</span>
+          </div>
+        </div>
+        <div class="template-card template-card--welcome reveal">
+          <div class="template-card__preview">
+            <div class="mini-email">
+              <div class="mini-email__bar mini-email__bar--terracotta"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--terracotta"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">Welcome Flow</div>
+            <div class="template-card__desc">Warm onboarding for new subscribers</div>
+            <span class="template-card__tag">Onboarding</span>
+          </div>
+        </div>
+        <div class="template-card template-card--launch reveal">
+          <div class="template-card__preview">
+            <div class="mini-email mini-email--dark">
+              <div class="mini-email__bar mini-email__bar--ink"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--ink"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">Launch Day</div>
+            <div class="template-card__desc">Bold product announcement</div>
+            <span class="template-card__tag">Launch</span>
+          </div>
+        </div>
+        <div class="template-card template-card--digest reveal">
+          <div class="template-card__preview">
+            <div class="mini-email">
+              <div class="mini-email__bar mini-email__bar--sage"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--sage"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">The Digest</div>
+            <div class="template-card__desc">Curated links and roundups</div>
+            <span class="template-card__tag">Digest</span>
+          </div>
+        </div>
+        <div class="template-card template-card--announcement reveal">
+          <div class="template-card__preview">
+            <div class="mini-email mini-email--dark">
+              <div class="mini-email__bar mini-email__bar--emerald"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--emerald"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">Big Update</div>
+            <div class="template-card__desc">Feature drops and announcements</div>
+            <span class="template-card__tag">Announcement</span>
+          </div>
+        </div>
+        <div class="template-card template-card--minimal reveal">
+          <div class="template-card__preview">
+            <div class="mini-email">
+              <div class="mini-email__bar mini-email__bar--neutral"></div>
+              <div class="mini-email__content">
+                <div class="mini-email__heading"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__text"></div>
+                <div class="mini-email__btn mini-email__btn--neutral"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-card__info">
+            <div class="template-card__name">Plain & Simple</div>
+            <div class="template-card__desc">Text-forward, no-frills layout</div>
+            <span class="template-card__tag">Minimal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRICING
+       ============================================================ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing__header reveal">
+        <div class="section-label">
+          <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1V15M12 4H6C4.34 4 3 5.34 3 7C3 8.66 4.34 10 6 10H10C11.66 10 13 11.34 13 13C13 14.66 11.66 16 10 16H4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Pricing
+        </div>
+        <h2 class="section-title">Pay once, use forever</h2>
+        <p class="pricing__subtitle">No subscriptions. No usage limits. One purchase, all the email templates you need.</p>
+      </div>
+      <div class="pricing__grid">
+        <!-- Single -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card__name">Single</div>
+          <div class="pricing-card__price"><sup>$</sup>19</div>
+          <div class="pricing-card__billing">One-time payment</div>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 template of your choice
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full color and content customization
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tested across 60+ email clients
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Commercial use for your projects
+            </li>
+          </ul>
+          <button class="pricing-card__btn pricing-card__btn--outline">Get Single</button>
+        </div>
+        <!-- Bundle -->
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__name">Bundle</div>
+          <div class="pricing-card__price"><sup>$</sup>29</div>
+          <div class="pricing-card__billing">One-time payment</div>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              All 6 templates (and future ones)
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full color and content customization
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tested across 60+ email clients
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Commercial use for your projects
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Free updates as new templates drop
+            </li>
+          </ul>
+          <button class="pricing-card__btn pricing-card__btn--filled">Get Bundle</button>
+        </div>
+        <!-- Agency -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card__name">Agency</div>
+          <div class="pricing-card__price"><sup>$</sup>39</div>
+          <div class="pricing-card__billing">One-time payment</div>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Everything in Bundle
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Client-use commercial license
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Priority support
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Early access to new templates
+            </li>
+            <li>
+              <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 12.5L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Custom branding removal
+            </li>
+          </ul>
+          <button class="pricing-card__btn pricing-card__btn--outline">Get Agency</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq__layout">
+        <div class="faq__header reveal">
+          <div class="section-label">
+            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.3"/><path d="M6 6.5C6 5.12 7.12 4 8.5 4C9.33 4 10 4.67 10 5.5C10 6.5 8.5 7 8.5 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="8.5" cy="10.5" r="0.6" fill="currentColor"/></svg>
+            FAQ
+          </div>
+          <h2 class="faq__title">Common questions</h2>
+          <p class="faq__intro">If yours isn't answered here, email loki@mamv.co and a real (AI) person will get back to you.</p>
+        </div>
+        <div class="faq__list">
+          <div class="faq__item active">
+            <button class="faq__question" aria-expanded="true">
+              What do I actually get?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>A complete, standalone HTML email file. Copy it into your email platform (Mailchimp, ConvertKit, Beehiiv, whatever you use), or send it directly. It's tested across Gmail, Outlook, Apple Mail, and mobile clients.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Do I need to know HTML or CSS?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>No. You fill in a form — your headline, body text, links, colors. EmailKits handles the HTML, the inline styles, the responsive tables, all the stuff that makes email coding painful. You just write your content.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Will these work in Mailchimp / ConvertKit / Beehiiv?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Yes. The output is standard HTML email code that works in any platform that lets you paste custom HTML. That includes Mailchimp, ConvertKit, Beehiiv, Buttondown, SendGrid, and most others.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Is this a subscription?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>No. One-time purchase. Pay once, use it forever. No monthly fees, no usage limits, no upsells. If you picked Bundle or Agency, you also get every future template for free.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Can I use these for client work?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>The Single and Bundle tiers are for your own projects. The Agency tier includes a commercial license for client work — use the templates for as many clients as you want.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              What if the template doesn't render correctly?
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <div class="faq__answer">
+              <p>Every template is tested across 60+ email clients before release. If you find a rendering issue, email us and we'll fix it. That said, email clients are unpredictable — we optimize for the top 95% of real-world usage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">EmailKits</span>
+          <span class="footer__divider"></span>
+          <span class="footer__tagline">Email templates that don't suck</span>
+        </div>
+        <div class="footer__links">
+          <a href="https://htmldecks.com">HTML Decks</a>
+          <span class="footer__divider"></span>
+          <a href="https://hireloki.com">Hire Loki</a>
+          <span class="footer__divider"></span>
+          <span class="footer__copy">Built by <a href="https://mamv.co" style="text-decoration: underline; text-underline-offset: 3px;">MAMV Ventures</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS (minimal, no frameworks)
+       ============================================================ -->
+  <script>
+    (function() {
+      // Nav scroll effect
+      const nav = document.getElementById('nav');
+      let ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      // Scroll reveal
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      reveals.forEach(function(el) { observer.observe(el); });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq__question').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const item = btn.parentElement;
+          const isOpen = item.classList.contains('active');
+
+          // Close all
+          document.querySelectorAll('.faq__item').forEach(function(i) {
+            i.classList.remove('active');
+            i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+          });
+
+          // Open clicked (if it was closed)
+          if (!isOpen) {
+            item.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          const target = document.querySelector(link.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

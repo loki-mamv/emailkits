@@ -1,0 +1,29 @@
+# EmailKits
+
+> Beautiful email templates in minutes. No code, no subscriptions.
+
+EmailKits is a self-serve email template builder. Pick a template, fill in your content through a simple form, and download production-ready HTML email code.
+
+## What it does
+- Form-based email template builder (no drag-and-drop, no code)
+- Outputs clean HTML email code tested across 60+ email clients
+- Works with Mailchimp, ConvertKit, Beehiiv, Buttondown, SendGrid, and any platform that accepts custom HTML
+- Templates: newsletters, welcome sequences, product launches, digests, announcements, minimal layouts
+
+## Pricing
+- Single: $19 (one template, commercial use)
+- Bundle: $29 (all templates + future updates, commercial use)
+- Agency: $39 (everything + client-use license, priority support)
+- All tiers are one-time purchases. No subscriptions.
+
+## Target audience
+Creators, startups, marketers, indie businesses, newsletter writers, solopreneurs
+
+## Links
+- Website: https://emailkits.com
+- Related: https://htmldecks.com (presentation templates)
+- Built by: MAMV Ventures (https://mamv.co)
+- Contact: loki@mamv.co
+
+## Full documentation
+For complete details, see: https://emailkits.com/llms-full-text.txt

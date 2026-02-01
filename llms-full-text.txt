@@ -1,0 +1,123 @@
+# EmailKits — Full Documentation
+
+## Overview
+
+EmailKits is a self-serve email/newsletter template builder created by MAMV Ventures. It solves a specific problem: building good-looking HTML emails is unnecessarily painful. Email HTML is nothing like web HTML — it requires nested tables, inline styles, Outlook-specific conditionals, and testing across dozens of rendering engines.
+
+EmailKits removes all of that complexity. You pick a template, fill in a form with your content (headlines, body text, images, links, brand colors), and get a complete, tested HTML email file ready to paste into any email platform.
+
+## The Problem EmailKits Solves
+
+Email template development is uniquely difficult because:
+1. Every email client renders HTML differently (Gmail strips styles, Outlook uses Word's rendering engine, etc.)
+2. Modern CSS features don't work — you're stuck with table-based layouts and inline styles
+3. Responsive email requires specific techniques that differ from responsive web design
+4. Free templates look generic and unprofessional
+5. Custom email design costs $500+ per template from a specialist
+6. Drag-and-drop editors are locked behind monthly subscriptions ($20-50/month)
+
+## How It Works
+
+1. **Pick a template** — Choose from 6+ professionally designed email layouts (newsletters, welcome sequences, product launches, digests, announcements, minimal text-forward)
+2. **Fill in your content** — Use a simple form interface to enter your headline, body copy, images, links, colors, and branding. No code knowledge required.
+3. **Download and send** — Get production-ready HTML that's been tested across 60+ email clients. Paste it into your email platform (Mailchimp, ConvertKit, Beehiiv, Buttondown, SendGrid, etc.).
+
+## Templates Available
+
+- **The Weekly** — Clean newsletter layout with distinct content sections, ideal for regular sends
+- **Welcome Flow** — Warm onboarding template for new subscribers, personal and inviting
+- **Launch Day** — Bold product announcement layout with strong visual hierarchy
+- **The Digest** — Curated links and roundup format, scannable and efficient
+- **Big Update** — Feature drops and company announcements with clear CTAs
+- **Plain & Simple** — Text-forward, minimal layout for when content matters most
+
+All templates are:
+- Responsive (mobile-first design)
+- Tested across 60+ email clients (Gmail, Outlook, Apple Mail, Yahoo, mobile clients)
+- Fully customizable (colors, fonts within email-safe options, content, images)
+- Clean HTML with inline styles (no external CSS dependencies)
+
+## Pricing
+
+All prices are one-time payments. No subscriptions, no usage limits, no upsells.
+
+### Single — $19
+- 1 template of your choice
+- Full color and content customization
+- Tested across 60+ email clients
+- Commercial use for your own projects
+
+### Bundle — $29 (Most Popular)
+- All 6 templates (plus any future templates added)
+- Full color and content customization
+- Tested across 60+ email clients
+- Commercial use for your own projects
+- Free updates as new templates are released
+
+### Agency — $39
+- Everything in Bundle
+- Client-use commercial license (use for client projects)
+- Priority support
+- Early access to new templates
+- Custom branding removal
+
+## Platform Compatibility
+
+EmailKits output works with any email platform that accepts custom HTML:
+- Mailchimp
+- ConvertKit
+- Beehiiv
+- Buttondown
+- SendGrid
+- Postmark
+- Amazon SES
+- Campaign Monitor
+- ActiveCampaign
+- Ghost
+- And most others
+
+Note: Substack has limited custom HTML support. Check their current capabilities.
+
+## Technical Details
+
+- Output: Standalone HTML files with all styles inlined
+- No external dependencies — everything is self-contained
+- Table-based layouts for maximum email client compatibility
+- MSO conditionals for Outlook rendering
+- Media queries for responsive behavior (where supported)
+- Semantic HTML structure where email clients allow
+- Optimized for deliverability (clean code, reasonable file size)
+
+## About
+
+EmailKits is part of the MAMV Ventures portfolio of digital tools, which also includes:
+- HTML Decks (https://htmldecks.com) — Presentation templates in pure HTML
+- Hire Loki (https://hireloki.com) — AI agent services
+
+Built by Loki, an AI agent, with human oversight.
+
+## Contact
+
+- Email: loki@mamv.co
+- Website: https://emailkits.com
+- Parent company: https://mamv.co
+
+## FAQ
+
+**What do I actually get?**
+A complete, standalone HTML email file. Copy it into your email platform, or send it directly. It's tested across Gmail, Outlook, Apple Mail, and mobile clients.
+
+**Do I need to know HTML or CSS?**
+No. You fill in a form — your headline, body text, links, colors. EmailKits handles the HTML, the inline styles, the responsive tables. You just write your content.
+
+**Will these work in Mailchimp / ConvertKit / Beehiiv?**
+Yes. The output is standard HTML email code that works in any platform that lets you paste custom HTML.
+
+**Is this a subscription?**
+No. One-time purchase. Pay once, use it forever. No monthly fees, no usage limits, no upsells.
+
+**Can I use these for client work?**
+The Single and Bundle tiers are for your own projects. The Agency tier includes a commercial license for client work.
+
+**What if the template doesn't render correctly?**
+Every template is tested across 60+ email clients. If you find a rendering issue, email us and we'll fix it. We optimize for the top 95% of real-world usage.
