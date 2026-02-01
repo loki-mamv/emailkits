@@ -432,6 +432,36 @@
   </section>
 
   <!-- ============================================================
+       EMAIL CAPTURE
+       ============================================================ -->
+  <section class="email-capture" id="email-capture">
+    <div class="container">
+      <div class="email-capture__inner reveal">
+        <div class="email-capture__content">
+          <div class="section-label">
+            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 4L8 8.5L14 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+            Free Template
+          </div>
+          <h2 class="section-title">Get a free newsletter template.</h2>
+          <p class="email-capture__text">A production-ready HTML email template. Tested across 60+ clients. No signup wall — just your email and it's yours.</p>
+        </div>
+        <form class="email-capture__form" id="captureForm">
+          <div class="email-capture__row">
+            <input type="text" name="name" placeholder="Your name" class="email-capture__input" autocomplete="given-name">
+            <input type="email" name="email" placeholder="you@email.com" class="email-capture__input email-capture__input--email" required autocomplete="email">
+          </div>
+          <button type="submit" class="email-capture__btn" id="captureBtn">
+            Get Free Template
+            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="email-capture__note">No spam. Just the template and occasional updates.</p>
+        </form>
+        <div class="email-capture__status" id="captureStatus" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
        PRICING
        ============================================================ -->
   <section class="pricing" id="pricing">
@@ -623,6 +653,8 @@
         <div class="footer__links">
           <a href="https://htmldecks.com">HTML Decks</a>
           <span class="footer__divider"></span>
+          <a href="https://pagebuilderhq.com">PageBuilderHQ</a>
+          <span class="footer__divider"></span>
           <a href="https://hireloki.com">Hire Loki</a>
           <span class="footer__divider"></span>
           <span class="footer__copy">Built by <a href="https://mamv.co" style="text-decoration: underline; text-underline-offset: 3px;">MAMV Ventures</a></span>
@@ -692,6 +724,46 @@
           }
         });
       });
+      // Email Capture Form
+      var captureForm = document.getElementById('captureForm');
+      var captureBtn = document.getElementById('captureBtn');
+      var captureStatus = document.getElementById('captureStatus');
+      var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxUkZV2hLhLq9zMkIueQzeiPKZUx8_4E8gyUF1t0Q3VHJXSxp6ZRVSXVMgcMdT4fdU/exec';
+
+      if (captureForm) {
+        captureForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var email = captureForm.querySelector('input[name="email"]').value.trim();
+          var name = captureForm.querySelector('input[name="name"]').value.trim();
+          if (!email) return;
+
+          captureBtn.textContent = 'Sending...';
+          captureBtn.disabled = true;
+
+          fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: email,
+              name: name,
+              product: 'emailkits',
+              source: 'website'
+            })
+          }).then(function() {
+            captureStatus.style.display = 'block';
+            captureStatus.className = 'email-capture__status email-capture__status--success';
+            captureStatus.textContent = "You're in. Check your email for the template.";
+            captureForm.style.display = 'none';
+          }).catch(function() {
+            captureStatus.style.display = 'block';
+            captureStatus.className = 'email-capture__status email-capture__status--error';
+            captureStatus.textContent = 'Something went wrong. Please try again.';
+            captureBtn.textContent = 'Get Free Template';
+            captureBtn.disabled = false;
+          });
+        });
+      }
     })();
   </script>
 </body>
