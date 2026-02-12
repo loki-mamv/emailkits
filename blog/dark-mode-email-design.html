@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Email Design: How to Make Emails Look Great Everywhere — EmailKits Blog</title>
+  <meta name="description" content="Learn dark mode email design techniques that work across Gmail, Outlook, and Apple Mail. Practical CSS, image, and color strategies for every email client.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://emailkits.com/blog/dark-mode-email-design">
+  <meta property="og:title" content="Dark Mode Email Design: How to Make Emails Look Great Everywhere">
+  <meta property="og:description" content="Dark mode email design techniques that work across Gmail, Outlook, and Apple Mail.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://emailkits.com/blog/dark-mode-email-design">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='18' width='100' height='100' fill='%23D4573A'/><path d='M25 30 L50 50 L75 30' stroke='white' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='25' y='30' width='50' height='40' rx='4' stroke='white' stroke-width='5' fill='none'/></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Dark Mode Email Design: How to Make Emails Look Great Everywhere",
+    "description": "Learn dark mode email design techniques that work across Gmail, Outlook, and Apple Mail.",
+    "datePublished": "2026-02-04",
+    "dateModified": "2026-02-04",
+    "author": { "@type": "Organization", "name": "EmailKits", "url": "https://emailkits.com" },
+    "publisher": { "@type": "Organization", "name": "EmailKits", "url": "https://emailkits.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://emailkits.com/blog/dark-mode-email-design" }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: #FBF7F4; color: #1a1a1a; line-height: 1.7; }
+    .blog-nav { position: sticky; top: 0; z-index: 100; background: rgba(251,247,244,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #E8E0D8; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    .blog-nav a { color: #1a1a1a; text-decoration: none; font-size: 0.9rem; }
+    .blog-nav__logo { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: #D4573A; }
+    .blog-nav__links { display: flex; gap: 1.5rem; align-items: center; }
+    .blog-nav__cta { background: #D4573A; color: #fff !important; padding: 0.5rem 1.2rem; border-radius: 6px; font-weight: 600; font-size: 0.85rem; }
+    .blog-article { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .blog-article__label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #D4573A; font-weight: 600; margin-bottom: 0.75rem; }
+    .blog-article h1 { font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.2; margin-bottom: 1rem; }
+    .blog-article__meta { font-size: 0.85rem; color: #6B5B4F; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #E8E0D8; }
+    .blog-article h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; margin: 2.5rem 0 1rem; }
+    .blog-article h3 { font-size: 1.15rem; font-weight: 600; margin: 2rem 0 0.75rem; }
+    .blog-article p { margin-bottom: 1.25rem; color: #2a2a2a; }
+    .blog-article ul, .blog-article ol { margin: 1rem 0 1.5rem 1.5rem; }
+    .blog-article li { margin-bottom: 0.5rem; color: #2a2a2a; }
+    .blog-article strong { color: #1a1a1a; }
+    .blog-article blockquote { border-left: 3px solid #D4573A; padding: 1rem 1.5rem; margin: 1.5rem 0; background: #F5EFEA; border-radius: 0 8px 8px 0; font-style: italic; color: #4a4a4a; }
+    .blog-article code { background: #F5EFEA; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; font-family: 'DM Mono', monospace; }
+    .blog-article pre { background: #1a1a1a; color: #e0e0e0; padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; font-size: 0.85rem; line-height: 1.6; }
+    .blog-article pre code { background: none; padding: 0; color: inherit; }
+    .blog-cta { background: linear-gradient(135deg, #D4573A 0%, #B8452E 100%); color: #fff; padding: 2.5rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
+    .blog-cta h3 { font-family: 'Instrument Serif', serif; font-size: 1.5rem; margin-bottom: 0.75rem; color: #fff; }
+    .blog-cta p { color: rgba(255,255,255,0.9); margin-bottom: 1.25rem; }
+    .blog-cta a { display: inline-block; background: #fff; color: #D4573A; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; }
+    .blog-footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #6B5B4F; border-top: 1px solid #E8E0D8; margin-top: 2rem; }
+    .blog-footer a { color: #D4573A; text-decoration: none; }
+    @media (max-width: 600px) { .blog-nav { padding: 0.75rem 1rem; } .blog-article { padding: 2rem 1rem 3rem; } }
+  </style>
+</head>
+<body>
+  <nav class="blog-nav">
+    <a href="https://emailkits.com" class="blog-nav__logo">EmailKits</a>
+    <div class="blog-nav__links">
+      <a href="https://emailkits.com/blog">Blog</a>
+      <a href="https://emailkits.com/#templates">Templates</a>
+      <a href="https://emailkits.com/#pricing" class="blog-nav__cta">Get EmailKits</a>
+    </div>
+  </nav>
+
+  <article class="blog-article">
+    <div class="blog-article__label">Email Design</div>
+    <h1>Dark Mode Email Design: How to Make Emails Look Great Everywhere</h1>
+    <div class="blog-article__meta">Published February 4, 2026 · 9 min read</div>
+
+    <p><strong>Dark mode email design</strong> is no longer an edge case you can ignore. In 2026, over 80% of smartphone users have dark mode enabled on at least one app, and most email clients — including Apple Mail, Gmail, Outlook, and Yahoo — support it in some form. The problem? Each client handles dark mode differently, and emails designed without dark mode in mind can look embarrassing, broken, or completely unreadable.</p>
+
+    <p>This guide covers exactly how dark mode works in email, which clients do what, and the practical techniques to make your emails look sharp in both light and dark environments.</p>
+
+    <h2>How Email Clients Handle Dark Mode</h2>
+
+    <p>The first thing to understand: there's no standard for dark mode in email. Each client implements it differently, and some have multiple dark mode behaviors depending on the user's settings.</p>
+
+    <h3>The Three Dark Mode Approaches</h3>
+
+    <ol>
+      <li><strong>No color changes (respect original):</strong> Apple Mail and some versions of iOS Mail leave your email exactly as you designed it in dark mode. Your colors stay the same — which means a white-background email will glow like a flashlight in a dark inbox.</li>
+      <li><strong>Partial color inversion:</strong> Gmail (Android/iOS) and Outlook (web) selectively invert light backgrounds to dark and adjust text colors. They try to be smart about it but sometimes miss, creating awkward color combinations.</li>
+      <li><strong>Full color scheme support:</strong> Apple Mail, Outlook (macOS), and some versions of Gmail respect the <code>@media (prefers-color-scheme: dark)</code> CSS query, letting you define explicit dark mode styles.</li>
+    </ol>
+
+    <p>The challenge is that your email will encounter all three behaviors across your subscriber list. You need a design strategy that handles every scenario.</p>
+
+    <h2>The Foundation: Design for Both Modes From the Start</h2>
+
+    <p>The biggest mistake is designing a light-mode email and then trying to "fix" it for dark mode. Instead, make design decisions from the beginning that work in both contexts.</p>
+
+    <h3>Background Colors</h3>
+
+    <p>Avoid pure white (#FFFFFF) backgrounds. When a dark mode client inverts your email, pure white becomes pure black, and your carefully designed spacing and sections lose all definition. Instead:</p>
+
+    <ul>
+      <li>Use a very light gray or off-white (#F5F5F5 or #FAFAFA) for the email body</li>
+      <li>Use white (#FFFFFF) for content card areas — this creates subtle contrast that dark mode clients can work with</li>
+      <li>Add a background color to your outer wrapper that's slightly darker than your content area</li>
+    </ul>
+
+    <h3>Text Colors</h3>
+
+    <p>Use near-black (#1a1a1a or #333333) instead of pure black (#000000) for body text. When inverted, pure black becomes pure white, which is harsh on dark backgrounds. Near-black inverts to a softer off-white that's much more readable.</p>
+
+    <p>For secondary text, use a mid-tone gray (#666666 or #6B6B6B) that provides good contrast in both modes.</p>
+
+    <h2>CSS Dark Mode Styles</h2>
+
+    <p>For clients that support <code>@media (prefers-color-scheme: dark)</code>, you can define explicit dark mode styles. This is the most reliable approach for Apple Mail, Outlook for Mac, and some versions of iOS Mail.</p>
+
+    <pre><code>@media (prefers-color-scheme: dark) {
+  .email-body {
+    background-color: #1a1a1a !important;
+  }
+  .email-content {
+    background-color: #2d2d2d !important;
+  }
+  .email-text {
+    color: #E0E0E0 !important;
+  }
+  .email-heading {
+    color: #FFFFFF !important;
+  }
+  .email-link {
+    color: #FF8A70 !important;
+  }
+}</code></pre>
+
+    <p>Key notes on this approach:</p>
+
+    <ul>
+      <li>Use <code>!important</code> on every declaration. Email clients often need this to override inline styles.</li>
+      <li>Use class selectors, not element selectors. Some clients strip element-level CSS.</li>
+      <li>Test that your dark mode colors meet WCAG contrast requirements. A common mistake is using dark gray text on a dark background that technically has enough contrast in a tool but reads poorly in practice.</li>
+    </ul>
+
+    <h2>Images in Dark Mode</h2>
+
+    <p>Images are where dark mode emails break most visibly. A logo with a white background looks great on a white email but creates an ugly white rectangle floating in a dark inbox.</p>
+
+    <h3>Logo and Icon Treatment</h3>
+
+    <ul>
+      <li><strong>Use transparent PNGs.</strong> This is the single most impactful change you can make. A logo on a transparent background integrates naturally with both light and dark backgrounds.</li>
+      <li><strong>Add a light glow or outline to dark logos.</strong> If your logo is dark-colored, it may disappear on dark backgrounds. Add a subtle white or semi-transparent stroke around the logo in your image editor.</li>
+      <li><strong>Provide a light version.</strong> For clients that support dark mode CSS, you can swap images using a background-image technique or the <code>display: none</code> approach to show different logo versions.</li>
+    </ul>
+
+    <h3>Hero Images and Photos</h3>
+
+    <p>Photos and hero images generally work fine in dark mode since they have their own color context. The issue is the space around them. Ensure image container backgrounds work in both modes, and avoid images that bleed into the email background color.</p>
+
+    <h2>Buttons and CTAs in Dark Mode</h2>
+
+    <p>Buttons need special attention because they must be visible, clickable, and attractive in both modes.</p>
+
+    <ul>
+      <li><strong>Avoid very light button backgrounds.</strong> A white or light gray button may become invisible in dark mode. Choose a mid-tone or saturated brand color that provides contrast against both white and dark backgrounds.</li>
+      <li><strong>Add a border to buttons.</strong> A 1-2px border in a slightly darker shade of your button color ensures the button boundary is always visible, regardless of the background.</li>
+      <li><strong>Use VML-based buttons for Outlook.</strong> Outlook desktop uses Word's rendering engine, which ignores most CSS. VML buttons render consistently regardless of mode.</li>
+      <li><strong>Define explicit dark mode button styles.</strong> In your dark mode media query, adjust button background, text color, and border to ensure they pop.</li>
+    </ul>
+
+    <h2>Testing Dark Mode Emails</h2>
+
+    <p>You can't design dark mode emails by guessing. You need to test across multiple clients.</p>
+
+    <h3>Essential Testing Targets</h3>
+
+    <ol>
+      <li><strong>Apple Mail (macOS, dark mode ON):</strong> Respects prefers-color-scheme. The gold standard for dark mode support.</li>
+      <li><strong>iOS Mail (dark mode ON):</strong> Similar to macOS but with slightly different rendering.</li>
+      <li><strong>Gmail (Android, dark mode):</strong> Partial inversion. Often the most problematic client.</li>
+      <li><strong>Gmail (web, dark mode):</strong> Inconsistent behavior. Test both the reading pane and full message view.</li>
+      <li><strong>Outlook (desktop, dark mode):</strong> Uses Word rendering plus its own dark mode logic. Test the Windows version specifically.</li>
+      <li><strong>Outlook.com (web, dark mode):</strong> More capable than desktop Outlook but still different from other web clients.</li>
+    </ol>
+
+    <h3>Testing Tools</h3>
+
+    <p>Litmus and Email on Acid both offer dark mode previews across multiple clients. If you're on a budget, test manually on actual devices — most email clients have a dark mode toggle in settings.</p>
+
+    <h2>Quick Dark Mode Checklist</h2>
+
+    <ul>
+      <li>Transparent PNGs for logos and icons</li>
+      <li>Off-white backgrounds instead of pure white</li>
+      <li>Near-black text instead of pure black</li>
+      <li><code>@media (prefers-color-scheme: dark)</code> CSS block with explicit colors</li>
+      <li>Buttons with visible borders and saturated colors</li>
+      <li>Alt text on all images (visible when images blocked in dark mode clients)</li>
+      <li>Test across Apple Mail, Gmail, and Outlook in dark mode</li>
+      <li>WCAG contrast check for both light and dark versions</li>
+    </ul>
+
+    <h2>The Bigger Picture</h2>
+
+    <p>Dark mode email design isn't about making a second version of your email. It's about making one version that adapts gracefully to whatever environment it lands in. The best approach combines sensible default design choices — transparent images, non-extreme colors, bordered buttons — with targeted CSS for clients that support it.</p>
+
+    <p>Start with your most-sent template. Apply the fundamentals from this guide. Test it across your top three client/device combinations. Then expand from there. You don't need to solve every edge case on day one — but you do need to stop sending emails that look broken for the majority of your readers.</p>
+
+    <div class="blog-cta">
+      <h3>Dark Mode, Already Handled</h3>
+      <p>Every EmailKits template is designed and tested for dark mode out of the box. Transparent images, adaptive colors, and cross-client compatibility — so you can focus on writing.</p>
+      <a href="https://emailkits.com/#pricing">Get EmailKits →</a>
+    </div>
+
+    <p>Dark mode isn't going away. The sooner your email templates account for it, the sooner you stop losing engagement to broken rendering. Your subscribers deserve emails that look intentional — in every mode, on every screen.</p>
+  </article>
+
+  <footer class="blog-footer">
+    <p><a href="https://emailkits.com">EmailKits</a> · Beautiful email templates in minutes</p>
+  </footer>
+</body>
+</html>
